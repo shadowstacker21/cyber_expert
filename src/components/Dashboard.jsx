@@ -13,7 +13,7 @@ const Dashboard = () => {
          console.log(list);
     
     useEffect(()=>{
-        axios.get('./public/experts.json')
+        axios.get('/experts.json')
         .then(data=>setUsers(data.data))
         .catch((err)=>setError(err.message))
       
